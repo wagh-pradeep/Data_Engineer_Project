@@ -1,0 +1,15 @@
+from pyspark import SparkConf, SparkContext, SparkFiles
+from pyspark.sql import SparkSession
+
+sc = SparkCOntext(conf=SparkConf())
+
+sc.addPyFile(f"gs://file_path/sample.py")
+
+# Get files into spark
+SparkFiles.get("sample.py")
+
+# Importing library from py file
+from sample import * 
+
+# Consider we have one variable pradeep in sample.py file so we can print like this
+print(pradeep)
