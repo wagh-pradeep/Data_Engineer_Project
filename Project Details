@@ -1,0 +1,46 @@
+    ----------------------------- GEP Rapid POV ---------------------------------------------------
+
+
+
+
+
+----------------------------- Trek Rapid POV ---------------------------------------------------
+
+-- TREK Rapid POV Detailed Project Flow :
+-client gaves us delta tables from Azure enviromnment to GCP bucket.
+-we created temp view on that delta file and created delta table on top of the view.
+-we have created databases, tables etc.
+-we faced many challenges like NVL replaced with coalesce, analyze not working in V2 table
+-for optimizaion we used:
+		1. optimize write
+		2. optimize compact
+-build pipelines in composer > airflow for that we write DAGs (Dags means .py file where we contains upstream and downstream notebooks to execution)
+
+-- Table names:
+	1. factsales
+	2. factOpenOrders
+	3. VendorProductRanked
+	4. DimCoupon
+	5. DimProduct
+	
+-- Challenges
+
+-- Services Used:
+	1. databricks
+	2. Dataproc
+	3. Composer
+	4. GCP Storage
+	5. Airflow
+	6. 
+
+-- Working areas:
+	1. Created TDD Documentation for client
+	2. Developing Setup notebooks in Sandbox Folder which helps to build Infrastructure.
+
+-- Table Size & No of Records:
+    1. 6TB+
+    2. 60 Billion+
+-- No of Tables:
+    1. 50+
+
+    ----------------------------- CICD Rapid POV ---------------------------------------------------
