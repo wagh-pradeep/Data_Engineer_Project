@@ -1,4 +1,4 @@
-    ----------------------------- GEP Rapid POV ---------------------------------------------------
+----------------------------- GEP Rapid POV ---------------------------------------------------
 
 
 
@@ -43,4 +43,8 @@
 -- No of Tables:
     1. 50+
 
-    ----------------------------- CICD Rapid POV ---------------------------------------------------
+------------------------------- CICD Rapid POV ---------------------------------------------------
+
+We are creating scala jar using sbt and java jar using sbt/mvn to run on dataproc batches.
+we are also creating python wheel packages to run on dataproc and databricks.
+
